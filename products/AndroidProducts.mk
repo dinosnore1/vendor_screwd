@@ -37,6 +37,6 @@ endif
 ifeq (screwd_dumpling,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_dumpling.mk
 endif
-
-
-
+ifeq (screwd_kenzo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/screwd_kenzo.mk
+endif
